@@ -1,12 +1,12 @@
 import type { ElementTable, RenderElement } from 'claude-code'
 
 import { ratexColor } from './latex'
-import type { PeleArt, PelePalette } from './pele'
-import { drawPele, pelePalette } from './pele'
 import { cells, graphemes, remember, width } from './render'
 import type { Style, Theme } from './theme'
 import { renderMermaidAscii, setChartSize } from './vendor/mermaid-text.js'
 import { loadPele } from './vendor/pele.js'
+import type { PeleArt, PelePalette } from './vendor/pelext.js'
+import { drawPele } from './vendor/pelext.js'
 
 const MAX_LINES = 80
 const PAD = '\uFDD0'
@@ -15,6 +15,11 @@ const peleCache = new Map<string, PeleArt | null>()
 const palettes = new WeakMap<Theme, { palette: PelePalette; key: string }>()
 let pele: ReturnType<typeof loadPele> | null = null
 const renderPele = (source: string, options?: Record<string, unknown>) => (pele ??= loadPele()).render(source, options)
+
+export const pelePalette = (theme: Theme, canvas: string): PelePalette => {
+  const series = [...new Set([theme.link, theme.number, theme.heading, theme.emphasis, theme.path, theme.codeFlag, theme.accent, theme.codeString].filter((c): c is string => !!c))]
+  return { canvas, text: theme.diagramText ?? theme.codeText, muted: theme.quote ?? theme.codeComment, line: theme.diagram, border: theme.diagram, accent: theme.accent, critical: theme.codeFlag, highlight: theme.emphasis ?? theme.accent, series, hues: series }
+}
 
 const paletteOf = (style: Style) => {
   const known = palettes.get(style.theme)

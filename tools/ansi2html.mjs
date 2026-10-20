@@ -1,5 +1,3 @@
-// node tools/ansi2html.mjs <screen.ans> <out.html>
-// Turns `tmux capture-pane -e -p` output into an HTML page, for screenshots of a live session.
 import { readFileSync, writeFileSync } from 'node:fs'
 const [inp, out] = process.argv.slice(2)
 const base = ['#000000','#cd3131','#0dbc79','#e5e510','#2472c8','#bc3fbc','#11a8cd','#e5e5e5','#666666','#f14c4c','#23d18b','#f5f543','#3b8eea','#d670d6','#29b8db','#ffffff']

@@ -6,6 +6,7 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ### Changed
 
+- The diagram engine is now its own package, [pelext](https://github.com/4our4ace/pelext), vendored as `hooks/vendor/pelext.js`. Every drawing is the same as before. Its command (`npx github:4our4ace/pelext diagram.mmd`) replaces `tools/cli.mjs` and `tools/preview.mjs`, and the engine's tests and quality tools moved with it.
 - The mod is renamed from pelemantis to cellsmith, and its marketplace from pele-terminal to cellsmith. It installs as `cellsmith@cellsmith`, the command is `/cellsmith`, and other mods reach it as `$.cellsmith` and the `cellsmith.markdown` event. Options set for `pelemantis@pele-terminal` need setting again under the new id.
 - Diagrams draw faster than prismantis's engine draws the same types. Turning Pele's SVG into terminal cells takes about a third of the time it did. Colors are plain numbers, the canvas is a few flat arrays, cells nothing was drawn on are skipped, fills walk each scanline's edge crossings once, labels look up each cell once while they slide, and the SVG reader splits attributes without a regex. The drawing is the same character for character.
 - A diagram that cannot fit is given up sooner. The engine first asks Pele for the narrowest layout, and when that is the same layout it already has, it stops drawing as soon as the boxes and labels show it is too wide, instead of drawing it whole and throwing it away. Fills, circles and line checks also do less work per drawing; every drawing comes out the same as before.

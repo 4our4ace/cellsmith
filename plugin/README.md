@@ -2,7 +2,7 @@
 
 > Claude Code replies drawn on the terminal's cell grid: themed tables and code, and Mermaid diagrams as real box-drawing art.
 
-cellsmith is a Claude Code mod that redraws assistant replies. Tables, code, headings, lists, links and tool calls get a color theme, and every `mermaid` block becomes a diagram: [Pele](https://pele.run) lays it out, and cellsmith draws the layout with box-drawing lines, block fills and real text. It needs nothing but text and true color, so it works in any modern terminal: Windows Terminal, kitty, Ghostty, WezTerm, iTerm2, Rio, VS Code.
+cellsmith is a Claude Code mod that redraws assistant replies. Tables, code, headings, lists, links and tool calls get a color theme, and every `mermaid` block becomes a diagram: [Pele](https://pele.run) lays it out, and cellsmith's engine, [pelext](https://github.com/4our4ace/pelext), draws the layout with box-drawing lines, block fills and real text. It needs nothing but text and true color, so it works in any modern terminal: Windows Terminal, kitty, Ghostty, WezTerm, iTerm2, Rio, VS Code.
 
 > [!NOTE]
 > - **A fork of [prismantis](https://github.com/NahumLitvin/prismantis).** cellsmith started as prismantis 0.14.0 by Nahum Litvin and keeps its themes, tables, code, math, tool rows and copy buttons. The diagram engine is new.
@@ -337,7 +337,7 @@ declare module 'claude-code' {
 
 ## Credits
 
-cellsmith by [4our4ace](https://github.com/4our4ace). It is a fork of [prismantis](https://github.com/NahumLitvin/prismantis) 0.14.0 by [Nahum Litvin](https://github.com/NahumLitvin), whose themes, tables, code, math, tool rows and copy buttons it keeps, and it draws diagrams laid out by [Pele](https://github.com/obsidianmd/pele) by kepano. [Prism](https://prismjs.com) highlights code and [beautiful-mermaid](https://github.com/lukilabs/beautiful-mermaid) draws the fallback box art; every bundled library and palette is listed in [THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md).
+cellsmith by [4our4ace](https://github.com/4our4ace). It is a fork of [prismantis](https://github.com/NahumLitvin/prismantis) 0.14.0 by [Nahum Litvin](https://github.com/NahumLitvin), whose themes, tables, code, math, tool rows and copy buttons it keeps, and it draws diagrams laid out by [Pele](https://github.com/obsidianmd/pele) by kepano with its own engine, [pelext](https://github.com/4our4ace/pelext). [Prism](https://prismjs.com) highlights code and [beautiful-mermaid](https://github.com/lukilabs/beautiful-mermaid) draws the fallback box art; every bundled library and palette is listed in [THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md).
 
 cellsmith is an independent project. It is not affiliated with or endorsed by Anthropic, Obsidian, the prismantis project or the Mermaid project. Claude and Claude Code are trademarks of Anthropic.
 

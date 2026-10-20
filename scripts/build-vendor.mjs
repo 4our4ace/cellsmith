@@ -1,5 +1,5 @@
 import { build } from 'esbuild'
-import { readFileSync, writeFileSync } from 'node:fs'
+import { copyFileSync, readFileSync, writeFileSync } from 'node:fs'
 
 const bundledPackages = new Set()
 const track = result => {
@@ -125,6 +125,20 @@ const pele = await build({
 })
 track(pele)
 writeFileSync('../plugin/hooks/vendor/pele.js', `export const loadPele = () => {\n${pele.outputFiles[0].text}return pele\n}\n`)
+
+track(await build({
+  metafile: true,
+  entryPoints: ['node_modules/pelext/dist/pelext.js'],
+  bundle: true,
+  format: 'esm',
+  platform: 'neutral',
+  target: 'es2023',
+  minifySyntax: true,
+  minifyWhitespace: true,
+  outfile: '../plugin/hooks/vendor/pelext.js',
+  legalComments: 'none',
+}))
+copyFileSync('node_modules/pelext/dist/pelext.d.ts', '../plugin/hooks/vendor/pelext.d.ts')
 
 for (const name of bundledPackages) {
   const { license } = JSON.parse(readFileSync(`node_modules/${name}/package.json`, 'utf8'))
