@@ -40,7 +40,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-`hooks/vendor/pele.js` is built from [Pele](https://github.com/obsidianmd/pele) 1.6.0 (its core and 13 diagram types, without the zoom controls) by `../scripts/build-vendor.mjs`.
+`hooks/vendor/pele.js` is built from [Pele](https://github.com/obsidianmd/pele) 1.7.0 (its core and 13 diagram types, without the zoom controls) by `../scripts/build-vendor.mjs`.
 
 ```
 MIT License
@@ -66,7 +66,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-`hooks/vendor/pelext.js` is built from [pelext](https://github.com/4our4ace/pelext) 0.1.0 (its engine, `dist/pelext.js`) by `../scripts/build-vendor.mjs`. pelext is cellsmith's own diagram engine, published as a separate package.
+`hooks/vendor/pelext.js` is built from [pelext](https://github.com/4our4ace/pelext) 0.2.0 (its engine, `dist/pelext.js`) by `../scripts/build-vendor.mjs`. pelext is cellsmith's own diagram engine, published as a separate package.
 
 ```
 MIT License
