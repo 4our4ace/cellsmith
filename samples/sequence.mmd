@@ -1,0 +1,8 @@
+sequenceDiagram
+  participant U as User
+  participant C as Claude
+  participant P as Pele
+  U->>C: draw a diagram
+  C->>P: render(text)
+  P-->>C: SVG
+  C-->>U: text art

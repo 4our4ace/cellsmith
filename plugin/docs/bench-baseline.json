@@ -1,0 +1,19 @@
+{
+  "parse, demo (cold)": 0.00961,
+  "pele draw, demo diagrams (cold)": 0.24569,
+  "pele paint, demo diagrams": 0.00203,
+  "classic layout, demo diagrams (cold)": 0.13895,
+  "classic paint, demo diagrams": 0.03666,
+  "full reply, demo (cold)": 0.342,
+  "full reply, demo (warm)": 0.13291,
+  "full reply, 6x demo (cold)": 0.92135,
+  "table, 300 rows": 0.49375,
+  "Hebrew, 300 paragraphs (cold)": 3.92617,
+  "code block, 1500 lines, highlighted": 0.23034,
+  "stream replay, 112 redraws of a 11202-char reply (per redraw)": 0.50743,
+  "nodes: 500 highlighted ts lines": 19505,
+  "nodes: 300 table rows": 10533,
+  "nodes: 300 paragraphs": 6600,
+  "nodes: 300 Hebrew paragraphs": 6300,
+  "nodes: demo reply": 1198
+}

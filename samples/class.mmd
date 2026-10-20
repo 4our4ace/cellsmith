@@ -1,0 +1,10 @@
+classDiagram
+  class Renderer {
+    +render(svg) Grid
+    -cells: Cell[]
+  }
+  class Grid {
+    +width: int
+    +toAnsi() string
+  }
+  Renderer --> Grid

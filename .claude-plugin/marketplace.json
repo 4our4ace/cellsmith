@@ -1,0 +1,27 @@
+{
+  "name": "cellsmith",
+  "owner": {
+    "name": "4our4ace"
+  },
+  "metadata": {
+    "description": "cellsmith: themeable reply rendering for Claude Code, with Mermaid diagrams drawn in terminal cells."
+  },
+  "plugins": [
+    {
+      "name": "cellsmith",
+      "source": "./plugin",
+      "description": "Themeable rendering for Claude Code replies: colored tables, code, math and Mermaid diagrams drawn on the terminal's cell grid.",
+      "version": "0.1.0",
+      "category": "appearance",
+      "tags": [
+        "mod",
+        "theme",
+        "markdown",
+        "tables",
+        "colors",
+        "mermaid",
+        "diagrams"
+      ]
+    }
+  ]
+}
