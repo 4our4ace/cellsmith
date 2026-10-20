@@ -4,6 +4,10 @@
 
 cellsmith is a Claude Code mod that redraws assistant replies. Tables, code, headings, lists, links and tool calls get a color theme, and every `mermaid` block becomes a diagram: [Pele](https://pele.run) lays it out, and cellsmith draws the layout with box-drawing lines, block fills and real text. It needs nothing but text and true color, so it works in any modern terminal: Windows Terminal, kitty, Ghostty, WezTerm, iTerm2, Rio, VS Code.
 
+> [!NOTE]
+> - **A fork of [prismantis](https://github.com/NahumLitvin/prismantis).** cellsmith started as prismantis 0.14.0 by Nahum Litvin and keeps its themes, tables, code, math, tool rows and copy buttons. The diagram engine is new.
+> - **Agent-coded.** Everything cellsmith adds (code, tests and these docs) was written and reviewed entirely by AI coding agents.
+
 ![A reply drawn by cellsmith in the catppuccin-mocha theme: a flowchart, a sequence diagram, a pie chart, a gantt chart, a state diagram and a bar chart side by side](docs/images/hero.png)
 
 ## TL;DR

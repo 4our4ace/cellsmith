@@ -2,6 +2,10 @@
 
 Claude Code replies drawn on the terminal's cell grid. cellsmith is a Claude Code mod that gives tables, code, headings, lists and tool calls a color theme, and turns every `mermaid` block into a diagram: [Pele](https://pele.run) lays it out, and `plugin/hooks/pele.ts` draws the layout with box-drawing lines, block fills and real text. It needs nothing but text and true color, so it works in any modern terminal.
 
+> [!NOTE]
+> - **A fork of [prismantis](https://github.com/NahumLitvin/prismantis).** cellsmith started as prismantis 0.14.0 by Nahum Litvin and keeps its themes, tables, code, math, tool rows and copy buttons. The diagram engine is new.
+> - **Agent-coded.** Everything cellsmith adds (code, tests and these docs) was written and reviewed entirely by AI coding agents.
+
 ![A reply drawn by cellsmith: a flowchart, a sequence diagram, a pie chart, a gantt chart, a state diagram and a bar chart side by side](plugin/docs/images/hero.png)
 
 ## Install
