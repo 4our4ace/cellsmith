@@ -66,7 +66,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-`hooks/vendor/pelext.js` is built from [pelext](https://github.com/4our4ace/pelext) 0.2.0 (its engine, `dist/pelext.js`) by `../scripts/build-vendor.mjs`. pelext is cellsmith's own diagram engine, published as a separate package.
+`hooks/vendor/pelext.js` is built from [pelext](https://github.com/4our4ace/pelext) 0.2.1 (its engine, `dist/pelext.js`) by `../scripts/build-vendor.mjs`. pelext is cellsmith's own diagram engine, published as a separate package.
 
 ```
 MIT License
