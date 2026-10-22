@@ -1,6 +1,6 @@
 {
   "name": "cellsmith",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Themeable rendering for Claude Code replies: colored tables, code, math and Mermaid diagrams drawn on the terminal's cell grid.",
   "author": {
     "name": "4our4ace"
