@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Changed
+
+- pelext 0.2.2: diagram text measures characters by Unicode 18.0's own width data, so emoji such as ✅, ❌ and ⭐ take two cells and boxes around them line up; combining marks stay on their letter, so Hindi, Thai and decomposed accents draw whole.
+
 ## [0.2.0] - 2026-10-22
 
 ### Changed
